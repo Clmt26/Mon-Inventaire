@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste de Machines</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Ajouter une Machine</h1>
+        <div class="form-group">
+            <label for="pcName">Nom du PC</label>
+            <input type="text" id="pcName" placeholder="Nom du PC">
+        </div>
+        <div class="form-group">
+            <label for="serialNumber">Numéro de série</label>
+            <input type="text" id="serialNumber" placeholder="Numéro de série">
+        </div>
+        <div class="form-group">
+            <label for="screenCount">Nombre d'écrans</label>
+            <input type="number" id="screenCount" placeholder="Nombre d'écrans" min="1">
+        </div>
+        <div id="screenSerialNumbersContainer">
+            <!-- Les champs de numéro de série des écrans seront ajoutés ici -->
+        </div>
+        <button id="generateScreensBtn">Générer les champs d'écrans</button>
+        <button id="addMachineBtn">Ajouter Machine</button>
+        <h2>Liste des Machines</h2>
+        <ul id="machineList"></ul>
+        <div class="form-group">
+            <label for="fileName">Nom du fichier CSV</label>
+            <input type="text" id="fileName" placeholder="Nom du fichier sans extension">
+        </div>
+        <button id="exportCsvBtn">Exporter en CSV</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
